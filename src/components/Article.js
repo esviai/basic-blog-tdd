@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { Article } from '../components'
-
-export default class ArticlesContainer extends React.Component {
+export default class Article extends React.Component {
   constructor () {
     super ()
     this.state = {
@@ -12,7 +10,7 @@ export default class ArticlesContainer extends React.Component {
   render () {
     return (
       <div>
-        <Article />
+
       </div>
     )
   }

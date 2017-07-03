@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Menu } from './components'
+import { Menu, ArticlesContainer } from './components'
 
 export default class App extends React.Component {
   render() {
@@ -19,6 +19,9 @@ export default class App extends React.Component {
           <div className="columns">
             <div className="column is-one-third">
               <Menu />
+            </div>
+            <div className="column">
+              <ArticlesContainer />
             </div>
           </div>
         </div>
