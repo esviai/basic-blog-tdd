@@ -5,7 +5,7 @@ export default class Article extends React.Component {
   render () {
     return (
       <div>
-        {this.props.articles.map((article, index) => {
+        {this.props.articles.reverse().map((article, index) => {
           return (
             <section key={index} className="hero">
               <br />
