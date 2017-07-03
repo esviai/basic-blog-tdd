@@ -14,13 +14,13 @@ describe('ArticlesContainer component', () => {
   })
   it('has articles state', () => {
     const articlesContainerWrapper = shallow(<ArticlesContainer />)
-    articlesState = articlesContainerWrapper.state('articles')
+    const articlesState = articlesContainerWrapper.state('articles')
     expect(articlesState).toBeDefined()
   })
   it('has article as an object', () => {
     const articlesContainerWrapper = shallow(<ArticlesContainer />)
-    articlesState = articlesContainerWrapper.state('articles')
-    isArticleAnObject = typeof  articlesState[0] === 'object'
+    const articlesState = articlesContainerWrapper.state('articles')
+    const isArticleAnObject = typeof  articlesState[0] === 'object'
     expect(isArticleAnObject).toBeTruthy()
   })
 })
