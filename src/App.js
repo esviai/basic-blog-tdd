@@ -21,6 +21,11 @@ export default class App extends React.Component {
       isNewPost: false,
     }
   }
+  openNewPost () {
+    this.setState({
+      isNewPost: true
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -36,7 +41,7 @@ export default class App extends React.Component {
         <div className="container">
           <div className="columns">
             <div className="column is-one-quarter">
-              <a className="button is-black">New Post</a>
+              <a onClick={() => this.openNewPost()} className="button is-black">New Post</a>
               <br></br>
               <br></br>
               <br></br>
