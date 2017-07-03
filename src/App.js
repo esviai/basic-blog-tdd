@@ -18,7 +18,7 @@ export default class App extends React.Component {
           author: 'S. Virta I'
         }
       ],
-      isNewPost: true,
+      isNewPost: false,
     }
   }
   render() {

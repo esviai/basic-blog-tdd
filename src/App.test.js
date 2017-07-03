@@ -29,4 +29,11 @@ describe('<App> component', () => {
     expect(isArticleAnObject).toBeTruthy()
   })
 
+  // === EVENTS ===
+  it('opens form to submit new article', () => {
+    const appWrapper = shallow(<App />)
+    appWrapper.instance().openNewPost()
+    const isNewPostState = appWrapper.state('isNewPost')
+    expect(isNewPostState).toBeTruthy()
+  })
 })
