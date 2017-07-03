@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Article from './Article'
+import Menu from './Menu'
 
 const articles = [
   {
@@ -16,18 +16,9 @@ const articles = [
   }
 ]
 
-describe('Article component', () => {
-  // === OUTPUT ===
+describe('Menu component', () => {
   it('renders correctly', () => {
-    const articleWrapper = shallow(<Article articles={articles}/>)
-    expect(articleWrapper).toHaveLength(1)
+    const menuWrapper = shallow(<Menu articles={articles}/>)
+    expect(menuWrapper).toHaveLength(1)
   })
-  it('has two articles', () => {
-    const articleWrapper = shallow(<Article articles={articles}/>)
-    const articleSection = articleWrapper.find('section')
-    expect(articleSection).toHaveLength(2)
-  })
-
-  // === PROPS ===
-  // To be added
 })

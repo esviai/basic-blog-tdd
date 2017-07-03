@@ -8,9 +8,11 @@ export default class Menu extends React.Component {
           Articles
         </p>
         <ul className="menu-list">
-          <li></li>
-          <li></li>
-          <li></li>
+          {this.props.articles.map((article, index) => {
+            return (
+              <li key={index}>{article.title}</li>
+            )
+          })}
         </ul>
         <p className="menu-label">
           Users
